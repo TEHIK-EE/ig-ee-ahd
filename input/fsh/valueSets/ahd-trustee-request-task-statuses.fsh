@@ -1,7 +1,7 @@
 ValueSet: AHDTrusteeRequestTaskStatusVS
 Id: ahd-trustee-request-task-status-vs
-Title: "Usaldusisiku kutse staatus"
-Description: "Usaldusisiku kutse (Task) lubatud staatused: ootel, kinnitatud, tagasilükatud. Alamhulk FHIR task-status koodisüsteemist."
+Title: "AHD trustee request status value set"
+Description: "The status values for defining the completeness of the request (adding an AHD trustee). Subsection of the FHIR statuses showing if the request is pending (request was sent but has yet to be answered - Requested), if the request is finalized and agreed (Completed), or the request was rejected by the trustee (Rejected)."
 * ^url = "https://fhir.ee/ahd/ValueSet/ahd-trustee-request-task-status-vs"
 * ^status = #draft
 * ^version = "1.0.0"

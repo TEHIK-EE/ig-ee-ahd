@@ -1,8 +1,8 @@
 Instance: AHDTrusteeExample
 InstanceOf: AHDTrustee
 Usage: #example
-Title: "Usaldusisiku näidis"
-Description: "Näidis usaldusisik AHD kontekstis"
+Title: "AHD trustee"
+Description: "Example instance of the trustee (related person) who represents patient's wishes according to their AHD."
 
 * id = "ahd-trustee-example"
 * meta.profile[0] = "https://fhir.ee/ahd/StructureDefinition/ahd-trustee"

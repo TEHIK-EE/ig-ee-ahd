@@ -1,7 +1,7 @@
 ValueSet: AHDCounselingResultStatusVS
 Id: ahd-counseling-result-status
-Title: "PET nõustamise otsuse staatus"
-Description: "Lubatud staatused PET nõustamise otsuse jaoks: final | entered-in-error"
+Title: "AHD consultation status value set"
+Description: "Status values for consultation to see whether the consultation was completed (final) or cancelled (entered-in-error)."
 * ^status = #draft
 * ^experimental = false
 * http://hl7.org/fhir/observation-status#final

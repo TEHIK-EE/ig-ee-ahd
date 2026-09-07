@@ -1,8 +1,8 @@
 Instance: AHDQuestionnaireResponseExample
 InstanceOf: AHDQuestionnaireResponse
 Usage: #example
-Title: "PET vorm täidetud (näidis)"
-Description: "Näidis vastus patsiendi elulõpu tahteavaldusele (PET)"
+Title: "AHD questionnaire response"
+Description: "Example instance of the AHD content and its structure. The questionnaire itself is defined in QRE service."
 
 * status = #completed
 * questionnaire = "https://fhir.ee/qre/Questionnaire-AHD|1.0.0"

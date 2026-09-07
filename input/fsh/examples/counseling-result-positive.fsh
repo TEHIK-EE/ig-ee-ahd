@@ -1,8 +1,8 @@
 Instance: AHDCounselingPositiveResultExample
 InstanceOf: AHDCounselingResult
 Usage: #example
-Title: "Nõustamise otsuse näidis - positiivne "
-Description: "Näidis PET nõustamise otsus, kus patsiendil on lubatud PET allkirjastada"
+Title: "AHD counselling result - Positive"
+Description: "Example instance of the counselling observation, where the HCP has deemed patient fit to sign their AHD. Does not need to describe the observation further."
 
 * id = "ahd-counseling-positive-result-example"
 * meta.profile[0] = "https://fhir.ee/ahd/StructureDefinition/ahd-counseling-result"

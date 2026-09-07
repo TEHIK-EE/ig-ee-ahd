@@ -1,8 +1,8 @@
 Instance: AHDWitnessExample
 InstanceOf: AHDWitness
 Usage: #example
-Title: "Tunnistaja näidis"
-Description: "Näidis tunnistaja AHD kontekstis"
+Title: "AHD witness"
+Description: "Example instance of the witness (related person) who represents the patient in the AHD signing."
 
 * id = "ahd-witness-example"
 * active = true

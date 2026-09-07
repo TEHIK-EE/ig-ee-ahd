@@ -1,8 +1,8 @@
 Instance: AHDPatientExample
 InstanceOf: EEMPIPatientVerified
 Usage: #example
-Description: "MPI patsiendi näidis"
-Title: "Patsient Pauliine Jänes"
+Description: "Example instance of the patient from master patient index."
+Title: "MPI patient example"
 * id = "200"
 * active = true
 * identifier[0]
@@ -16,10 +16,10 @@ Title: "Patsient Pauliine Jänes"
  
 
  Instance: PractitionerExample
-InstanceOf: Practitioner
+InstanceOf: EESPDPractitioner
 Usage: #example
-Title: "Perearsti näidis"
-Description: "Näidis arst, kes võib läbi viia PET nõustamise"
+Title: "SPD practitioner example"
+Description: "Example healthcare practitioner (doctor) who will conduct the consultation process. Data will come from SPD service"
 
 * id = "practitioner-example"
 * active = true
@@ -27,7 +27,7 @@ Description: "Näidis arst, kes võib läbi viia PET nõustamise"
 * identifier[0].system = "https://fhir.ee/sid/pid/est/ni"
 * identifier[0].value = "38101010021"
 
-* name[0].use = #official
+
 * name[0].family = "Tamm"
 * name[0].given[0] = "Katrin"
 
@@ -35,17 +35,20 @@ Description: "Näidis arst, kes võib läbi viia PET nõustamise"
 * telecom[0].value = "+3726001234"
 * telecom[0].use = #work
 
-* qualification[0].code.text = "Arst"
+
 
 Instance: OrganizationExample
-InstanceOf: Organization
+InstanceOf: EESPDOrganization
 Usage: #example
-Title: "Tervishoiuasutuse näidis"
-Description: "Näidis organisatsioon, kus PET nõustamine toimus"
+Title: "SPD organization example"
+Description: "Example organization where the consultation takes place. Data will come from SPD service"
 
 * id = "organization-example"
 * active = true
 * name = "Kesklinna Perearstikeskus"
+* type.coding.system = "https://fhir.ee/CodeSystem/organisatsiooni-tyyp"
+* type.coding.code = #prov
+* type.coding.display = "TTO"
 
 * identifier[0].system = "https://example.ee/fhir/sid/org-registry-code"
 * identifier[0].value = "12345678"

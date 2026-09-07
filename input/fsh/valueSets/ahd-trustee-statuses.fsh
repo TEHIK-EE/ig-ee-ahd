@@ -1,7 +1,7 @@
 ValueSet: AHDTrusteeStatusVS
 Id: ahd-trustee-status-vs
-Title: "Usaldusisiku staatus"
-Description: "Usaldusisiku lubatud staatused, alamhulk FHIR task-status koodisüsteemist"
+Title: "AHD trustee status value set"
+Description: "Status values defining the trustee (partly depends on the request). A subsection of FHIR statuses with Estonian designation. Requested = ootel, Completed = kehtiv, Rejected = tagasilükatud, Cancelled = tühistatud."
 * ^url = "https://fhir.ee/ahd/ValueSet/ahd-trustee-status-vs"
 * ^status = #draft
 * ^version = "1.0.0"

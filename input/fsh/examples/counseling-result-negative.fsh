@@ -1,8 +1,8 @@
 Instance: AHDCounselingNegativeResultExample
 InstanceOf: AHDCounselingResult
 Usage: #example
-Title: "Nõustamise otsuse näidis - negatiivne"
-Description: "Näidis PET nõustamise otsus, kus patsiendil ei ole lubatud PET allkirjastada"
+Title: "AHD counselling result - Negative"
+Description: "Example instance of the counselling observation, where the HCP has deemed patient unfit to sign their AHD. Must provide the reason."
 
 * id = "ahd-counseling-result-example"
 * meta.profile[0] = "https://fhir.ee/ahd/StructureDefinition/ahd-counseling-result"

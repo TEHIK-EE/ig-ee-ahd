@@ -1,7 +1,7 @@
 ValueSet: AHDSignerRoleVS
 Id: ahd-signer-role-vs
-Title: "PET allkirjastaja roll"
-Description: "Allkirjastaja roll: patsient (datasubject) või tunnistaja (legal)."
+Title: "AHD signer role value set"
+Description: "Signer role values are used for Provenance resources in the AHD service. AHD trustee uses Provenance for the signature and the signer role will be the data subject. AHD content may be signed be either the patient (role data subject) or a witness if the patient is incapable (role legal)."
 * ^status = #draft
 * ^version = "1.0.0"
 * ^experimental = false
