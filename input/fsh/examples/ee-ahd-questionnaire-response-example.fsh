@@ -8,7 +8,6 @@ Description: "Example instance of the AHD content and its structure. The questio
 * questionnaire = "https://fhir.ee/qre/Questionnaire-AHD|1.0.0"
 * subject = Reference(AHDPatientExample)
 * author = Reference(AHDPatientExample)
-* authored = "2024-04-02T10:15:00+03:00"
 * language = #et
 
 * extension[signedDigitally].valueBoolean = true
