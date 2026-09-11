@@ -19,7 +19,19 @@ Description: "Example instance of the AHD content and its structure. The questio
 
 * item[+].linkId = "pet-indication-first"
 
-* item[=].item[0].linkId = "pet-indication-first.unacceptable-treatment"
+* item[=].item[0].linkId = "pet-indication-first.unacceptable-condition"
+* item[=].item[=].answer[0].valueCoding = $VSEIS#12 "Ma jään püsivalt teadvusetusse seisundisse ehk koomasse"
+* item[=].item[=].answer[1].valueCoding = $VSEIS#18 "Minu vaimne võimekus halveneb pöördumatult, nii et ma ei ole suuteline oma seisundist aru saama, otsuseid tegema ega inimestega suhtlema"
+* item[=].item[=].answer[2].valueCoding = $VSEIS#65 "Ma sõltun igapäevatoimingutes (nt söömine, joomine, enesehooldus, riietumine jm) täielikult teistest inimestest"
+* item[=].item[=].answer[3].valueCoding = $VSEIS#34 "Muu"
+
+* item[=].item[+].linkId = "pet-indication-first.unacceptable-condition.other"
+* item[=].item[=].answer[0].valueString = "Kui ma ei suuda enam oma lähedasi ära tunda ega nendega suhelda."
+
+* item[=].item[+].linkId = "pet-indication-first.other"
+* item[=].item[=].answer[0].valueString = "Kui olen soovimatu seisundi korral koduses keskkonnas, siis ei soovi kiirabiga transporti haiglasse"
+
+* item[=].item[+].linkId = "pet-indication-first.unacceptable-treatment"
 * item[=].item[=].answer[0].valueCoding = $PETQ#these-life-sustaining-treatments "Ei soovi ma järgmisi elu säilitavaid sekkumisi"
 
 * item[=].item[=].answer[=].item[0].linkId = "pet-indication-first.unacceptable-treatment.list"
@@ -27,20 +39,6 @@ Description: "Example instance of the AHD content and its structure. The questio
 * item[=].item[=].answer[=].item[=].answer[1].valueCoding = $ELUS#13 "Hingamisaparaadi kasutamine"
 * item[=].item[=].answer[=].item[=].answer[2].valueCoding = $ELUS#45 "Neeruasendusravi ehk dialüüs"
 * item[=].item[=].answer[=].item[=].answer[3].valueCoding = $ELUS#15 "Kunstlik toitmine ja kunstlik vedeliku manustamine"
-
-
-* item[=].item[+].linkId = "pet-indication-first.unacceptable-condition"
-* item[=].item[=].answer[0].valueCoding = $VSEIS#12 "Ma jään püsivalt teadvusetusse seisundisse ehk koomasse"
-* item[=].item[=].answer[1].valueCoding = $VSEIS#18 "Minu vaimne võimekus halveneb pöördumatult, nii et ma ei ole suuteline oma seisundist aru saama, otsuseid tegema ega inimestega suhtlema"
-* item[=].item[=].answer[2].valueCoding = $VSEIS#65 "Ma sõltun igapäevatoimingutes (nt söömine, joomine, enesehooldus, riietumine jm) täielikult teistest inimestest"
-* item[=].item[=].answer[3].valueCoding = $VSEIS#34 "Muu"
-
-
-* item[=].item[+].linkId = "pet-indication-first.unacceptable-condition.other"
-* item[=].item[=].answer[0].valueString = "Kui ma ei suuda enam oma lähedasi ära tunda ega nendega suhelda."
-
-* item[=].item[+].linkId = "pet-indication-first.other"
-* item[=].item[=].answer[0].valueString = "Kui olen soovimatu seisundi korral koduses keskkonnas, siis ei soovi kiirabiga transporti haiglasse"
 
 
 * item[+].linkId = "palliative-treatment"
@@ -65,3 +63,22 @@ Description: "Example instance of the AHD content and its structure. The questio
 
 * item[+].linkId = "other-wishes"
 * item[=].answer[0].valueString = "Viimne puhkepaik peaks olema Garda järv"
+
+// Lõppsätted
+* item[+].linkId = "confirmation"
+
+
+* item[=].item[0].linkId = "confirmation.volition"
+* item[=].item[=].answer[0].valueBoolean = true
+
+
+* item[=].item[+].linkId = "confirmation.understand-content"
+* item[=].item[=].answer[0].valueBoolean = true
+
+
+* item[=].item[+].linkId = "confirmation.modification"
+* item[=].item[=].answer[0].valueBoolean = true
+
+
+* item[=].item[+].linkId = "confirmation.sharing"
+* item[=].item[=].answer[0].valueBoolean = true

@@ -18,7 +18,12 @@ Description: "If the patient is physically incapable of filling out their AHD do
 * language 0..0
 * text 0..1
 * contained 0..0
-* extension 0..0
+* modifierExtension 0..0
+
+* extension 0..*
+* extension contains AHDWitnessIdentity named mpiIdentity 1..1
+* extension[mpiIdentity] ^short = "Tunnistaja isik MPI-s"
+* extension[mpiIdentity] ^definition = "Viide tunnistajale kui isikule MPI-s. Erineb RelatedPerson.patient väärtusest, mis viitab patsiendile, kellele tehakse PET."
 * modifierExtension 0..0
 
 * active 1..1
