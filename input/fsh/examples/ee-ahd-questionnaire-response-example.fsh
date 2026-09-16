@@ -15,7 +15,7 @@ Description: "Example instance of the AHD content and its structure. The questio
 
 
 * item[0].linkId = "pet-indication"
-* item[=].answer[0].valueCoding = $PETQ#pet-indication-first-choice "Elu säilitavast ravist keeldumine, kui selle tulemus on mulle vastuvõetamatu"
+* item[=].answer[0].valueCoding = $AHDI#pet-indication-first-choice "Elu säilitavast ravist keeldumine, kui selle tulemus on mulle vastuvõetamatu"
 
 * item[+].linkId = "pet-indication-first"
 
@@ -32,7 +32,7 @@ Description: "Example instance of the AHD content and its structure. The questio
 * item[=].item[=].answer[0].valueString = "Kui olen soovimatu seisundi korral koduses keskkonnas, siis ei soovi kiirabiga transporti haiglasse"
 
 * item[=].item[+].linkId = "pet-indication-first.unacceptable-treatment"
-* item[=].item[=].answer[0].valueCoding = $PETQ#these-life-sustaining-treatments "Ei soovi ma järgmisi elu säilitavaid sekkumisi"
+* item[=].item[=].answer[0].valueCoding = $QLST#these-life-sustaining-treatments "Ei soovi ma järgmisi elu säilitavaid sekkumisi"
 
 * item[=].item[=].answer[=].item[0].linkId = "pet-indication-first.unacceptable-treatment.list"
 * item[=].item[=].answer[=].item[=].answer[0].valueCoding = $ELUS#20 "Elustamine kliinilisest surmast"
@@ -42,7 +42,7 @@ Description: "Example instance of the AHD content and its structure. The questio
 
 
 * item[+].linkId = "palliative-treatment"
-* item[=].answer[0].valueCoding = $PETQ#refuse-specified-treatments "Ei soovi selliseid sekkumisi"
+* item[=].answer[0].valueCoding = $PTA#refuse-specified-treatments "Ei soovi selliseid sekkumisi"
 
 * item[=].answer[=].item[0].linkId = "palliative-treatment.treatments"
 * item[=].answer[=].item[=].answer[0].valueString = "Soovin vältida tugevat sedatsiooni ja valuravi"

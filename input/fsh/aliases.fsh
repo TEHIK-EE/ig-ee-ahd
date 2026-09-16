@@ -3,3 +3,7 @@ Alias: $PETQ  = https://fhir.ee/CodeSystem/patsiendi-elulopu-tahteavalduse-kysim
 Alias: $ELUS  = https://fhir.ee/CodeSystem/elusailitavad-sekkumised
 Alias: $VSEIS = https://fhir.ee/CodeSystem/vastuvoetamatud-seisundid
 Alias: $SUREM = https://fhir.ee/CodeSystem/suremispaik
+Alias: $AHDI = https://fhir.ee/ValueSet/patsiendi-elulopu-tahteavalduse-rakendumine
+Alias: $QLST = https://fhir.ee/ValueSet/elu-sailitavast-sekkumisest-keeldumise-ulatus
+Alias: $QAT = https://fhir.ee/ValueSet/koigist-ravisekkumistest-keeldumise-ulatus
+Alias: $PTA = https://fhir.ee/ValueSet/palliatiivravi-ulatus
