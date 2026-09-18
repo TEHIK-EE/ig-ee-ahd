@@ -51,21 +51,21 @@ Description: "Example instance of the AHD content and its structure. The questio
 // Muud elulõpu juhised ja eelistused
 * item[+].linkId = "other-preferences"
 
-* item[+].linkId = "other-preferences.preferred-death-location"
-* item[=].answer[0].valueCoding = $SUREM#99 "Muu"
+* item[=].item[0].linkId = "other-preferences.preferred-death-location"
+* item[=].item[=].answer[0].valueCoding = $SUREM#99 "Muu"
 
-* item[=].answer[=].item[0].linkId = "other-preferences.preferred-death-location.other"
-* item[=].answer[=].item[=].answer[0].valueString = "Hospiitsis või hooldekodus, kus lähedased saavad külastada."
+* item[=].item[=].answer[=].item[0].linkId = "other-preferences.preferred-death-location.other"
+* item[=].item[=].answer[=].item[=].answer[0].valueString = "Hospiitsis või hooldekodus, kus lähedased saavad külastada."
 
 
-* item[+].linkId = "other-preferences.people-by-side-death"
-* item[=].answer[0].valueString = "Mari Maasikas (abikaasa), tel +372 5xxxxxxx; Pauliine Jänes (tütar), tel +372 5xxxxxxx."
+* item[=].item[+].linkId = "other-preferences.people-by-side-death"
+* item[=].item[=].answer[0].valueString = "Mari Maasikas (abikaasa), tel +372 5xxxxxxx; Pauliine Jänes (tütar), tel +372 5xxxxxxx."
 
-* item[+].linkId = "other-preferences.religious-preferences"
-* item[=].answer[0].valueString = "Soovin, et vajadusel kutsutaks vaimulik (luteri)."
+* item[=].item[+].linkId = "other-preferences.religious-preferences"
+* item[=].item[=].answer[0].valueString = "Soovin, et vajadusel kutsutaks vaimulik (luteri)."
 
-* item[+].linkId = "other-preferences.other-wishes"
-* item[=].answer[0].valueString = "Viimne puhkepaik peaks olema Garda järv"
+* item[=].item[+].linkId = "other-preferences.other-wishes"
+* item[=].item[=].answer[0].valueString = "Viimne puhkepaik peaks olema Garda järv"
 
 // Lõppsätted 
 * item[+].linkId = "confirmation"
