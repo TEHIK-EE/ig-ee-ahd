@@ -67,7 +67,7 @@ Description: "Example instance of the AHD content and its structure. The questio
 * item[+].linkId = "other-preferences.other-wishes"
 * item[=].answer[0].valueString = "Viimne puhkepaik peaks olema Garda järv"
 
-// Lõppsätted
+// Lõppsätted 
 * item[+].linkId = "confirmation"
 
 
