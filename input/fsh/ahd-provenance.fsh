@@ -23,6 +23,8 @@ Description: "Data about the signing process of the AHD questionnaire response. 
 * id 0..1
 * meta.versionId 0..1
 * meta.lastUpdated 0..1
+* meta.lastUpdated ^short = "Paberil allkirjastatud PETi kehtivuse alguse aeg"
+* meta.lastUpdated ^comment = "Kasutatakse juhul, kui PET on allkirjastatud paberil ja tahteavaldus on TISi kantud läbi TJT."
 * meta.profile 1..1
 
 * target 1..1
@@ -34,6 +36,8 @@ Description: "Data about the signing process of the AHD questionnaire response. 
 * recorded 0..0
 * occurred[x] 1..1
 * occurred[x] only dateTime
+* occurred[x] ^short = "Digiallkirjastatud PET kehtivuse alguse aeg"
+* occurred[x] ^comment = "Digiallkirjastatud PETi puhul on see allkirjastamise ajatempli. Kasutatakse juhul kui PET täidetakse läbi Terviseportaali"
 
 * policy 0..0
 * location 0..0
