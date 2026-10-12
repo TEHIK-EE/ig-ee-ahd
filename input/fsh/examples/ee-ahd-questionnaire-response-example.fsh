@@ -26,8 +26,8 @@ Description: "Example instance of the AHD content and its structure. The questio
 * item[=].item[=].answer[2].valueCoding = $VSEIS#65 "Ma sõltun igapäevatoimingutes (nt söömine, joomine, enesehooldus, riietumine jm) täielikult teistest inimestest"
 * item[=].item[=].answer[3].valueCoding = $VSEIS#34 "Muu"
 
-* item[=].item[+].linkId = "pet-indication-first.unacceptable-condition.other"
-* item[=].item[=].answer[0].valueString = "Kui ma ei suuda enam oma lähedasi ära tunda ega nendega suhelda."
+* item[=].item[=].item[0].linkId = "pet-indication-first.unacceptable-condition.other"
+* item[=].item[=].item[=].answer[0].valueString = "Kui ma ei suuda enam oma lähedasi ära tunda ega nendega suhelda."
 
 * item[=].item[+].linkId = "pet-indication-first.other"
 * item[=].item[=].answer[0].valueString = "Kui olen soovimatu seisundi korral koduses keskkonnas, siis ei soovi kiirabiga transporti haiglasse"
