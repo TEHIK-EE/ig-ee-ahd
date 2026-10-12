@@ -12,6 +12,7 @@ Description: "Example instance of the AHD content and its structure. The questio
 
 * extension[signedDigitally].valueBoolean = true
 * extension[witness].valueReference = Reference(AHDWitnessExample)
+* extension[signatureDeadline].valueDate = "2026-11-12"
 
 
 * item[0].linkId = "pet-indication"
@@ -84,5 +85,5 @@ Description: "Example instance of the AHD content and its structure. The questio
 * item[=].item[=].answer[0].valueBoolean = true
 
 
-* item[=].item[+].linkId = "confirmation.sharing"
-* item[=].item[=].answer[0].valueBoolean = true
+// * item[=].item[+].linkId = "confirmation.sharing"
+// * item[=].item[=].answer[0].valueBoolean = true

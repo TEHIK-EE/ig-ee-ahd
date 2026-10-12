@@ -26,7 +26,8 @@ Description: "The actual content of the AHD and the patient's wishes"
 
 * extension contains 
     AHDWitnessReference named witness 0..1 and
-    AHDSignedDigitally named signedDigitally 0..1
+    AHDSignedDigitally named signedDigitally 0..1 and
+    AHDSignatureDeadline named signatureDeadline 0..1
 * extension ^slicing.rules = #closed
 
 
